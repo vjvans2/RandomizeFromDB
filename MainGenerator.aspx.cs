@@ -28,19 +28,5 @@ namespace PokemonRandomName
             string pkmn = ddlPokemon.SelectedItem.ToString();
             lblPkmn.Text = pkmn;
         }
-
-        //protected void NextLevelRandom2()
-        //{
-        //    Random r = new Random();
-        //    List<int> storedInt = new List<int>(ddlPokemon.Items.Count);
-
-
-        //    int countDDLEntries = ddlPokemon.Items.Count;
-        //    int randomPick = r.Next(0, (countDDLEntries - 1));
-
-        //    ddlPokemon.SelectedIndex = randomPick;
-        //    string pkmn = ddlPokemon.SelectedItem.ToString();
-        //    lblPkmn.Text = pkmn;
-        //}
     }
 }
