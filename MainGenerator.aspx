@@ -11,13 +11,12 @@
         <asp:Button ID="btnRandom" runat="server" Text="Random Pkmn Name" OnClick="btnRandom_Click" />
         <br /><br />
         <asp:Label ID="lblPkmn" runat="server" Text=""></asp:Label>
-        <br /><br />
-        <asp:DropDownList ID="ddlPokemon" AutoPostBack="true" runat="server" DataSourceID="SqlDataSource1" 
-            DataTextField="PokemonName" DataValueField="PokemonID"> </asp:DropDownList>
 
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PKMNConnectionString %>" 
+        <asp:SqlDataSource ID="SqlDataSourcePkmnNames" runat="server" ConnectionString="<%$ ConnectionStrings:PKMNConnectionString %>" 
             SelectCommand="SELECT [PokemonID], [PokemonName] FROM [Pokemon2] ORDER BY [PokemonID]">
         </asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSourcePkmnID" runat="server" ConnectionString="<%$ ConnectionStrings:PKMNConnectionString %>" 
+            SelectCommand="SELECT [PokemonID] FROM [Pokemon2] ORDER BY [PokemonID]"></asp:SqlDataSource>
     </form>
 </body>
 </html>
