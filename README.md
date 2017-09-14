@@ -1,16 +1,20 @@
 # RandomizeFromDB
 A small program using Pokemon to practice utilizing items with a local SQL Database and randomizing them from that DB info.<br><br>
 
-Things to Optimize:<br>
-- the DDL needs to go away and the binding of the information from the DB needs to reside within the button click. <br>
-OR <br>
-- grab the identity information taken from the SELECT statement and randomize from that number.  May eliminate the use of the DDL<br>
-OR <br>
-- the DDL is hidden to the user, but when I tried to use the Visible property it did not render at all.  I want invisible if that is a thing.<br><br>
-- ensure that once a selection has been chosen it is not chosen until the entire list is exhausted. <br>
-- play with Xamarin.Forms and SQLite to enable cross platform app usage.<br>
+Version 2.0 <br>
+Improvements from Version 1.0: <br>
+- used C# to directly call database and eliminates DDLists
+- all events happening within button click through multiple methods
 
-++ the basic usage of the application (communicating a list of info from a database to connect to an app and randomizing the data) is live though and is a good baseline.
+Things to Optimize:<br>
+- ensure that once a selection has been chosen it is not chosen until the entire list is exhausted. <br>
+- enable cross platform usage and store initial information on a mobile friendly DB<br>
+OR <br>
+- use "pseudo-saving" and store PokemonDB information within a text file and call it on the mobile.  
+
+<br><br>
+
+The basic functionality of the app works besides being able to exclude repeats.
 
 
 
